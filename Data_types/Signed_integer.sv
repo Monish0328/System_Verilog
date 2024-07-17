@@ -1,7 +1,7 @@
 module Signed_integer
-  short int var_a;
-        int var_b;
-  long  int var_c;
+  shortint var_a;
+       int var_b;
+   longint var_c;
 
 
   initial begin
