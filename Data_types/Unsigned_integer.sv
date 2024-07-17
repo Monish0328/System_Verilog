@@ -14,7 +14,7 @@ module Unsigned_integer;
        var_b += 1;
        var_c += 1;
   end
-  inital
+  initial
   $monitor("var_a=%0d var_b=%0d var_c=%0d",var_a,var_b,var_c);
 endmodule
     
