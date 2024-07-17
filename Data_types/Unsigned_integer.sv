@@ -1,7 +1,7 @@
-module Unsigned_integer
-  short int  unsigned var_a;
-        int  unsigned var_b;
-  long  int  unsigned var_c;
+module Unsigned_integer;
+  shortint  unsigned var_a;
+       int  unsigned var_b;
+   longint  unsigned var_c;
 
 
   initial begin
