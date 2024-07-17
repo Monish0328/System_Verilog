@@ -9,4 +9,5 @@ module 4_state_datatype;
       #1
       $display("my_data=0x%0h en=%0b",my_data,en);
     end
+    assign en=my_data[0];
 endmodule
