@@ -14,4 +14,5 @@ module thd_array;
         $display ("m_data[%0d][%0d]=ox%h",i,j,m_data[i][j]);
   end
   end
+  end
 endmodule
