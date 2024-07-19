@@ -1,4 +1,4 @@
-module tb;
+module Da_associative_array;
   int fruits [] [string];
   
   initial begin
