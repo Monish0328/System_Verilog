@@ -1,4 +1,4 @@
-module structure_example;
+module td_struct;
 typedef  struct{
     String fruit;
     int    count;
