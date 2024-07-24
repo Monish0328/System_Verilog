@@ -6,7 +6,7 @@
   }st_ctrl;
 
   module p_struct;
-    sr_ctrl ctrl_reg;
+    st_ctrl ctrl_reg;
 
     initial begin 
       ctrl_reg ='{4'ha,3'h5,1};
