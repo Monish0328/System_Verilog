@@ -1,12 +1,12 @@
-module up_struct;
+module Up_struct;
   struct{
-    String fruit,
-    int    count,
-    byte   expiry
+    String fruit;
+    int    count;
+    byte   expiry;
   } st_fruit;
 
   initial begin 
-    st_fruit='{"apple",4,15};
+    st_fruit ='{"apple",4,15};
   $display("st_fruit=%p",st_fruit);
 
   st_fruit.fruit="pineapple";
