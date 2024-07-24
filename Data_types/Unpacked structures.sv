@@ -1,4 +1,4 @@
-module structure_example;
+module up_struct;
   struct{
     String fruit,
     int    count,
