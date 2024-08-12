@@ -1,31 +1,19 @@
 class transaction;
   static int s_id;
-  int id;
   
-  static function void incr_s_id(); 
+  static function void incr_s_id(); // Static function
     s_id++;
-   
-  endfunction
-  
-  function void incr_id(); 
-    s_id++;
-    id++;
   endfunction
   
 endclass
 
 module class_example;
-  transaction tr[5], tr_new;
+  transaction tr;
   initial begin
-    foreach (tr[i]) begin 
-      tr[i] = new();
-      tr[i].incr_s_id();
-      $display("On calling incr_s_id: Value of s_id = %0h, id = %0h", tr[i].s_id, tr[i].id);
-    end
-    tr[0].s_id = 0; 
-    foreach (tr[i]) begin 
-      tr[i].incr_id();
-      $display("On calling incr_id: Value of s_id = %0h, id = %0h", tr[i].s_id, tr[i].id);
-    end
+    transaction::incr_s_id(); // Access static function without class handle
+    tr.incr_s_id(); // Access static function with class handle
+    $display("After incr_id function call");
+    $display("Value of s_id = %0h using tr handle", tr.s_id);
+    $display("Value of s_id = %0h using scope resolution operator", transaction::s_id);
   end
 endmodule
