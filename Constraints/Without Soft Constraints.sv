@@ -4,7 +4,7 @@ class seq_item;
   constraint val1_c {val inside{5,[10:15}};}
 endclass
 
-module constraint_example
+module constraint_example;
   seq_item item;
   initial begin
     item = new item();
